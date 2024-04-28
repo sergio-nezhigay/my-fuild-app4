@@ -42,7 +42,7 @@ import {seoPayload} from './lib/seo.server';
 import {ROOT_QUERY} from './qroq/queries';
 import tailwindCss from './styles/tailwind.css';
 
-// This is important to avoid re-fetching root queries on sub-navigations
+// This is important to avoid re-fetching root queries on sub-navigationsss
 export const shouldRevalidate: ShouldRevalidateFunction = ({
   currentUrl,
   formMethod,
@@ -114,7 +114,7 @@ export async function loader({context, request}: LoaderFunctionArgs) {
       query layout {
         shop {
           id
-        } 
+        }
       }
     `),
   ]);
