@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+        time: "05:30"
+        timezone: "America/New_York"
+    ignore:
+      - dependency-name: '@shopify/oxygen-workers-types'
+        update-types:
+          ['version-update:semver-minor', 'version-update:semver-major']
+      - dependency-name: '@shopify/cli'
+        update-types:
+          ['version-update:semver-minor', 'version-update:semver-major']
+
+  - package-ecosystem: 'npm'
+    directory: '/studio'
+    schedule:
+      interval: 'daily'
+        time: "05:30"
+        timezone: "America/New_York"
