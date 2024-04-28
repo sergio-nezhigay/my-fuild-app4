@@ -3,5 +3,10 @@
   "tailwindCSS.experimental.classRegex": [
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
     ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
-  ]
+],
+"workbench.colorCustomizations": {
+    "activityBar.background": "#500E54",
+    "titleBar.activeBackground": "#701475",
+    "titleBar.activeForeground": "#FEFCFE"
+}
 }
